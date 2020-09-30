@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+	<!-- Remove After Building -->
+	<meta http-equiv="refresh" content="10">
+	<!-- End Removal -->
+	<!-- Google Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
+	
+	<title> Print Studio - More About Us </title>
+	<link rel="icon" href="printstudio.***" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<meta property="og:url" content="https://www.printstudioline.com" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="PrintStudio" />
+	<meta name="Description" content="Finding fun 3D Prints, Stickers, and so much more!" />
+	<meta property="og:title" content="PrintStudio" />
+	<link rel="stylesheet" type="text/css" href="print_studio_styles.css">
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+  
+  
+ grunt.initConfig({
+    bake: {
+        your_target: {
+            files: {
+                "dist/index.html": "app/index.html",
+            }
+        }
+    }
+}); 
+</script>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+</head>
+<body>
+<div id="header"></div>
+
+<h1> This is the Home Page </h1>
+
+</body>
+<footer id="footer">
+<div class="row">
+	<div class="columnab">
+		<h6> COPYRIGHT & TERMS OF SERVICE </h6>
+	</div>
+	<div class="columnb">
+		<h6> LINKS </h6>
+	</div>
+	<div class="columnab" style="padding: 0">
+	<div class="columna" style="height: 50%;">
+		<h6> SIGN UP </h6>
+	</div><div class="columna" style="height: 50%;">
+		<h6> CONTACT US </h6>
+	</div></div>
+	<div class="columnb">
+		<h6> SOCIAL LINKS </h6>
+	</div>
+	<div class="columnab">
+		<h6> TIME & DATE </h6>
+	</div>
+</div>
+</footer>
+</html>
